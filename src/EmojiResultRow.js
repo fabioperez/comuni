@@ -4,22 +4,24 @@ import "./EmojiResultRow.css";
 
 class EmojiResultsRow extends PureComponent {
   render() {
-    const codePointHex = this.props.symbol.codePointAt(0).toString(16);
-    const src = `//cdn.jsdelivr.net/emojione/assets/png/${codePointHex}.png`;
+    var cod0 = this.props.codice.slice(0, 3);
+    var cod1 = this.props.codice.slice(3, 6);
+    var url = "http://www.comuni-italiani.it/" + cod0 + "/" + cod1 + "/";
     return (
-      <div
-        className="component-emoji-result-row copy-to-clipboard"
-        data-clipboard-text={this.props.symbol}
-      >
-        <img alt={this.props.title} src={src} />
-        <span className="title">{this.props.title}</span>
-        <span className="info">Click to copy emoji</span>
-      </div>
+      <a className="component-emoji-a" target="_blank" href={url}>
+        <div className="component-emoji-result-row" >
+          <span className="title">{this.props.nome}, {this.props.regione}, {this.props.provincia} ({this.props.sigla})</span>
+        </div>
+      </a>
     );
   }
 }
 EmojiResultsRow.propTypes = {
-  title: PropTypes.string,
-  symbol: PropTypes.string
+  name: PropTypes.string,
+  zona: PropTypes.string,
+  regione: PropTypes.string,
+  provincia: PropTypes.string,
+  sigla: PropTypes.string,
+  codice: PropTypes.number,
 };
 export default EmojiResultsRow;

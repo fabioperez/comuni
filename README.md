@@ -1,8 +1,9 @@
-Emoji Search
+Comuni Italiani
 ---
 
-Created with *create-react-app*. See the [full create-react-app guide](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+Forked from: https://github.com/ahfarmer/emoji-search/fork
 
+Comuni list from: https://github.com/matteocontrini/comuni-json
 
 
 Install

@@ -19,9 +19,13 @@ class EmojiResults extends PureComponent {
       <div className="component-emoji-results">
         {this.props.emojiData.map(emojiData => (
           <EmojiResultRow
-            key={emojiData.title}
-            symbol={emojiData.symbol}
-            title={emojiData.title}
+            key={emojiData.codice}
+            nome={emojiData.nome}
+            zona={emojiData.zona.nome}
+            regione={emojiData.regione.nome}
+            provincia={emojiData.provincia.nome}
+            sigla={emojiData.sigla}
+            codice={emojiData.codice}
           />
         ))}
       </div>

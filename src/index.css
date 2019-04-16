@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  max-width: 1000px;
+  margin: auto;
 }
 
 body .github-fork-ribbon:before {

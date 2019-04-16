@@ -1,15 +1,16 @@
 {
-  "name": "emoji-search",
+  "name": "comuni-italiani",
   "version": "0.1.0",
   "license": "MIT",
-  "homepage": "http://ahfarmer.github.io/emoji-search",
+  "homepage": "https://fabioperez.github.io/comuni",
   "devDependencies": {
-    "gh-pages": "^1.1.0",
+    "gh-pages": "^1.2.0",
     "prettier": "^1.13.0",
     "react-scripts": "^1.0.17"
   },
   "dependencies": {
     "clipboard": "^1.7.1",
+    "fuse.js": "^3.4.4",
     "github-fork-ribbon-css": "^0.2.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
